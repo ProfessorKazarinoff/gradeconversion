@@ -1,3 +1,9 @@
+# .csv files that could contain student names, grades, student ID numbers
+*.csv
+
+# Pycharm .idea settings
+.idea/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
