@@ -1,5 +1,6 @@
 # .csv files that could contain student names, grades, student ID numbers
 *.csv
+.csv
 
 
 # config file passwords saved
