@@ -46,7 +46,7 @@ def convert_grades(wp='wp_download.csv', D2L='D2L_download.csv', output='output.
 
     # insert of column of the D2L OrgID's
     df.insert(0, 'OrgDefinedId', df['Username'].map(UserIDdict))
-    df.set_index('OrgDefinedId', drop=True, inplace=True)
+    #df.set_index('OrgDefinedId', drop=True, inplace=True)
 
     df = df.replace('Grades Not Released', ' ', regex=True)  # remove all Grades not replaced cells
     df = df.fillna('')  # fill any NaN cells
