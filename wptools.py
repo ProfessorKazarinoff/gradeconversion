@@ -17,6 +17,7 @@ def extract_wp_names(wp_csv):
     #print(names_with_spaces, type(names_with_spaces))
     wp_names_with_spaces = [x for x in names_with_spaces if str(x) != 'nan'] # take out NaN
     wp_names=[s.strip() for s in wp_names_with_spaces] # take out spaces
+    if 'Total Points Available' in wp_names: wp_names.remove('Total Points Available')
     print('WileyPlus Names =', wp_names)
     return(wp_names)
 

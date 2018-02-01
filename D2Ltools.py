@@ -23,14 +23,14 @@ def extract_D2L_OrgIDs(D2L_csv):
     #print(UN)
     Users = UN.tolist()  # convert pd dataframe to regular list
     Usernames = [s.strip('#') for s in Users]  # remove the # in the name
-    print('D2L Usernames = ', Usernames)
+    #print('D2L Usernames = ', Usernames)
 
     ID = df['OrgDefinedId']
     #print(ID)
     IDs = ID.tolist()  # convert pd dataframe to regular list
     OrgIDs = [x.strip('#') for x in IDs]  # remove the # in the name
     #OrgIDs=['G03460796', 'G03219671', 'G02983595']
-    print( 'D2L OrgIDs = ', OrgIDs)
+    #print( 'D2L OrgIDs = ', OrgIDs)
     OrgIDd = dict(zip(Usernames, OrgIDs))
     printDict(OrgIDd)
 

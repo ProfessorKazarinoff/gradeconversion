@@ -12,7 +12,7 @@ def match_list(input_list,master):
         match= process.extractOne(item, master)
         dict[item] = match[0]
         print(item,' = ',match[0],'     % match =', match[1])
-    print(dict)
+    #print(dict)
     return dict
 
 def printDict(d):
