@@ -39,8 +39,7 @@ def convert_grades(wp='wp_download.csv', D2L='D2L_download.csv', output='output.
     # replace the WP assignments with the D2L assignments
     df = df.rename(columns=assignd)
     #print(df)
-    df.drop(df.columns[[0, 1, 2, 3, 4, 5, 6]], axis=1,
-            inplace=True)  # get rid of the first 7 columns which don't contain grades
+    df.drop(df.columns[[0, 1, 2, 3, 4, 5, 6]], axis=1, inplace=True)  # get rid of the first 7 columns which don't contain grades
 
     # put the Username column first
     df.insert(0, 'Username', df['endUsername'])
@@ -52,6 +51,7 @@ def convert_grades(wp='wp_download.csv', D2L='D2L_download.csv', output='output.
     df.set_index('OrgDefinedId', drop=True, inplace=True)
     print(df)
     df = df.replace('Grades Not Released', ' ', regex=True)  # remove all Grades not replaced cells
+    df = df.replace('Not Assigned', ' ', regex=True) # remove all not assigned marks
     df = df.fillna('')  # fill any NaN cells
 
     df['End-of-Line Indicator'] = '#'  # add a column with End-of-Line Indicator # needed by D2L
