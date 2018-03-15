@@ -74,9 +74,9 @@ def convert_grades(wp='wp_download.csv', D2L='D2L_download.csv'):
 
 @Gooey
 def main(wp='wp_download.csv', D2L='D2L_download.csv', output='output.csv'):
-    parser = GooeyParser(description="Grade Conversion GUI App!")
+    parser = GooeyParser(description="Grade Conversion GUI App! \n Download WileyPlus and D2L .csv grade exports \n Remove teacher rows from D2L .csv before import")
     parser.add_argument('WileyPlus_csv', help="Browse to the WileyPlus file you downloaded", widget='FileChooser')
-    parser.add_argument('D2L_csv', help="Browse to the D2L file you downloaded. Remove teacher rows from csv before import", widget='FileChooser')
+    parser.add_argument('D2L_csv', help="Browse to the D2L file you downloaded", widget='FileChooser')
     parser.add_argument('output_csv', help="Type name of output csv file, include .csv extension", widget='TextField')
     args = vars(parser.parse_args())
 
