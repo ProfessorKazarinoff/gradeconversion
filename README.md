@@ -18,9 +18,9 @@ $ conda env create -f environment.yml
 
 ## Running the Script
 
-Assumes you have the Anaconda distribution of Python installed and are working from the Anaconda Prompt and are currently in the  ```gradeconversion directory```
+Assumes you have the [Anaconda distribution of Python](https://www.anaconda.com/download/) installed and are working from the Anaconda Prompt and are currently in the  ```gradeconversion``` directory.
 
 ```
 $ conda activate gradeconversion
-(gradeconversion)$ python run.pyu
+(gradeconversion)$ python run.py
 ```
