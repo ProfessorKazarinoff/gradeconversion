@@ -1,5 +1,5 @@
 # gradeconversion
-A Python script to convert grades from the WileyPlus.com online homework tool to the D2L learning management system. Uses a great python package called [**gooey**](https://github.com/chriskiehl/Gooey) to produce a GUI that runs the script.
+A Python script to convert grades from the WileyPlus.com online homework tool to the D2L learning management system. Uses a great Python package called [**gooey**](https://github.com/chriskiehl/Gooey) to produce a GUI that runs the script.
 
 ## Installation
 
@@ -11,6 +11,7 @@ Assumes you have the [Anaconda distribution of Python](https://www.anaconda.com/
 $ git clone https://github.com/ProfessorKazarinoff/gradeconversion.git
 
 # create the conda environment
+
 $ cd gradeconversion
 $ conda env create -f environment.yml
 ```
