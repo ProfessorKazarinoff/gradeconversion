@@ -22,5 +22,6 @@ Assumes you have the [Anaconda distribution of Python](https://www.anaconda.com/
 
 ```
 $ conda activate gradeconversion
+
 (gradeconversion)$ python run.py
 ```
