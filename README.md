@@ -16,6 +16,11 @@ $ git clone https://github.com/ProfessorKazarinoff/gradeconversion.git
 
 $ cd gradeconversion
 $ conda env create -f environment.yml
+
+# activate environment and pip install Gooey
+
+$ conda activate gradeconversion
+(gradeconversion)$ pip install gooey
 ```
 
 ## Running the Script
